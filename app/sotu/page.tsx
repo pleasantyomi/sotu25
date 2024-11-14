@@ -13,7 +13,7 @@ export default function Sotu() {
   const generateLetter = () => {
     if (typeof window === "undefined") return "";
 
-    const TWO_MINUTES = 10 * 60 * 1000;
+    const TWO_MINUTES = 2 * 60 * 60 * 1000;
     const now = Date.now();
 
     const defaultCounts = {
