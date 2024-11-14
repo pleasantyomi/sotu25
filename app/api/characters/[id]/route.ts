@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(
-  request: Request,
+  request: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
-    // Replace this with your actual database query
-    // This is just an example response
+    // For testing purposes, you can return a mock character
     const character = {
       id: params.id,
       name: "Example Character",
